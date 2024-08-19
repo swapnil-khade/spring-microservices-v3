@@ -1,0 +1,33 @@
+
+SpringCloudConfigServer to manage configuration of different evironment.  Centralized 
+
+Netflix Eureka namig server 																					SPRING BOOT 3.X ONWARDS
+	-service regisration
+	-service discovery
+	
+	
+Ribbon																				Spring Cloud Load Balancer  which is part of spring-cloud-starter-netflix-eureka-client
+	client side load balancing
+	
+Feign REST clients
+	
+	
+Netflix Zuul API gateway															Spring Cloud Gateway
+	common features like logging, security, analytics
+	
+	
+Fault tolerance 
+	Netflix Hystrix - If a service is down configure default response				Resilience4j instead of Hystrix as circuit breaker framework
+																					fault tolerance library  
+	
+	
+	
+	
+Docker 
+
+	Zipkin distibuted tracing server
+	
+			(handle only traces)														(metrics, logs, traces)
+		spring cloud sleuth -> Brave -> Zipkin										Micrometer -> OpenTelemetry -> Zipkin
+		assign ID to request across  multiple component 
+	

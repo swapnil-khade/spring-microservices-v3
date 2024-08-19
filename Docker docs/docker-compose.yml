@@ -1,0 +1,61 @@
+version: '3'
+services:
+  currency-exchange-service:
+    #build: ./currency-exchange-service
+    image: currency-exchange-service
+    mem_limit: 700m
+    container_name: currency-exchange
+    ports:
+      - "8000:8000"
+    networks:
+      - currency-network
+    depends_on:
+      - naming-server
+
+  currency-conversion-service:
+    #build: ./currency-conversion-service
+    image: currency-conversion-service
+    mem_limit: 700m
+    container_name: currency-conversion
+    ports:
+      - "8100:8100"
+    networks:
+      - currency-network
+    depends_on:
+      - naming-server
+
+  api-gateway:
+    #build: ./api-gateway
+    image: api-gateway
+    mem_limit: 700m
+    container_name: currency-conversion
+    ports:
+      - "8765:8765"
+    networks:
+      - currency-network
+    depends_on:
+      - naming-server
+
+  naming-server:
+    #build: ./naming-server
+    image: naming-server
+    mem_limit: 700m
+    container_name: naming-server
+    ports:
+      - "8761:8761"
+    networks:
+      - currency-network
+
+#docker run -p 9411:9411 openzipkin/zipkin:2.23
+
+  zipkin-server:
+    image: openzipkin/zipkin:2.23
+    mem_limit: 300m
+    ports:
+      - "9411:9411"
+    networks:
+      - currency-network
+    restart: always #Restart if there is a problem starting up
+    
+networks:
+  currency-network:

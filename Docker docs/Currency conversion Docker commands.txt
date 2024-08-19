@@ -1,0 +1,29 @@
+
+docker images
+
+docker  ps
+docker  ps -a
+
+
+docker rmi
+docker rm
+
+docker container stop [container id]
+
+docker-compose up 
+
+
+
+docker build -t currency-exchange-service .
+docker run --name currency-exchange -p 8000:8000 currency-exchange-service
+
+docker build -t currency-conversion-service .
+docker run --name currency-conversion -p 8100:8100 currency-conversion-service
+
+docker build -t api-gateway .
+docker run --name api-gateway -p 8765:8765 api-gateway
+
+docker build -t naming-server .
+docker run --name naming-server -p 8765:8765 naming-server
+
+
