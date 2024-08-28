@@ -1,0 +1,60 @@
+Baner		WFO			Sarvatra    	Monday  				hibernate
+		
+							Moovfwd			Wed 		3:00		Saga pattern, JWT, JUnit, Microservices , event driven architecture 
+														
+						Capgemini		Thu			11:30
+						Fulcrum 		Thu			5:00
+							
+							Apexon			Fri			12:00
+							
+							
+							
+	vimannagar	WFO		Coditas									design patterns, Hibernate, 						19 LPA
+																	database schema, views, stored procedures 
+															
+							
+							TEST Globant
+								
+		
+
+		Hibernate interview questions 
+																	POMODORO technique
+		design pattern	
+		Spring AOP
+		
+		JUnit spy raptor
+		
+		
+delete truncate
+indexing
+composite key
+left join
+ACID
+
+
+
+Microservices
+Docker
+Microservices interview questions
+
+Spring secrity  JWT	
+
+
+IOC
+dependency injection
+types
+
+
+java 8 features
+	Date Time API
+	Optional class
+	Stream API
+	
+	
+
+Collection
+hashmap hashtable concurrenthashmap
+ConcurrentModificationException
+Java 17 
+
+actuators
