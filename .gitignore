@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+*.DS_Store
 
 # Log file
 *.log
@@ -24,3 +25,5 @@ hs_err_pid*
 
 .idea
 .target
+02.restful-web-services/restful-web-services.iml
+05.kubernetes/05.kubernetes.iml

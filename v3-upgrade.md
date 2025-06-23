@@ -11,18 +11,18 @@
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <!--<version>2.4.1</version> SB2-->
-    <version>3.0.6</version>
+    <!--<version>3.5.0</version> SB2-->
+    <version>3.5.0</version>
     <relativePath/> <!-- lookup parent from repository -->
 </parent>
 
 <properties>
 
-    <!-- <java.version>15</java.version> SB2-->
-    <java.version>17</java.version>
+    <!-- <java.version>21</java.version> SB2-->
+    <java.version>21</java.version>
 
-    <!--<spring-cloud.version>2020.0.0</spring-cloud.version> SB2-->
-    <spring-cloud.version>2022.0.0</spring-cloud.version>
+    <!--<spring-cloud.version>2025.0.0</spring-cloud.version> SB2-->
+    <spring-cloud.version>2025.0.0</spring-cloud.version>
 
 </properties>
 ```
@@ -172,7 +172,7 @@ public class CurrencyConversionController {
 ## Docker Compose Zipkin URL Configuration
 ```yaml
 #SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/ #SB2
-MANAGEMENT.ZIPKIN.TRACING.ENDPOINT: http://zipkin-server:9411/api/SB2/spans #SB3
+MANAGEMENT.ZIPKIN.TRACING.ENDPOINT: http://zipkin-server:9411/api/v2/spans #SB3
 ```
 
 ## Naming of Images
